@@ -1,0 +1,71 @@
+.board {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 78%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.cell  {
+    width: 12.5%;
+    float: left;
+    height: 65px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background: #e3cb8f;
+    padding: 5px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.cell_active{
+    border: 2px solid rgba(228, 2, 2, 1);
+    cursor: pointer;
+}
+.cell_black {
+    background: #9c7740;
+}
+.figure {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+.figure_black.figure{
+    background: radial-gradient(#000000,#635f5f);
+}
+.figure_white.figure{
+    background: radial-gradient(#fbf8f8,#e4e2e2,#464646);
+}
+.figure.figure__active {
+    background: rgba(18, 247, 3, 0.58);
+    color: #f9eded;
+}
+.figure_type_P{
+    -webkit-mask-image: url(../img/peshka.svg);
+    mask-image: url(../img/peshka.svg);
+}
+.figure_type_FR{
+    -webkit-mask-image: url(../img/ferz.svg);
+    mask-image: url(../img/ferz.svg);
+}
+.figure_type_KR{
+    -webkit-mask-image: url(../img/korol.svg);
+    mask-image: url(../img/korol.svg);
+}
+.figure_type_OF{
+    -webkit-mask-image: url(../img/ofizer.svg);
+    mask-image: url(../img/ofizer.svg);
+}
+.figure_type_K{
+    -webkit-mask-image: url(../img/kon.svg);
+    mask-image: url(../img/kon.svg);
+}
+.figure_type_SL{
+    -webkit-mask-image: url(../img/slon.svg);
+    mask-image: url(../img/slon.svg);
+}
